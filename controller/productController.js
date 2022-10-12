@@ -71,7 +71,7 @@ class ProductController {
 
   static async getAllList(req, res, next) {
     try {
-      console.log(+req.user.id);
+      // console.log(+req.user.id);
       const lists = await UserProduct.findAll({
         where: { UserId: +req.user.id },
         include: [
